@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumesh Siriwardhana</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3 class="whiteText">Rumesh Siriwardhana .</h3>
+        <div class="navigations" onclick="toggleMenu">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="normal">
+            <li><a href="#" onclick="smoothScrollTo('home',event)">Home</a></li>
+            <li>
+              <a href="#" onclick="smoothScrollTo('about', event)">About</a>
+            </li>
+
+            <li>
+              <a href="#" onclick="smoothScrollTo('skills', event)">Skills</a>
+            </li>
+            <li>
+              <a href="#" onclick="smoothScrollTo ('contact', event)"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="dropdown">
+        <li><a href="#" onclick="smoothScrollTo('home',event)">Home</a></li>
+        <li>
+          <a href="#" onclick="smoothScrollTo('about', event)">About</a>
+        </li>
+
+        <li>
+          <a href="#" onclick="smoothScrollTo('skills', event)">Skills</a>
+        </li>
+        <li>
+          <a href="#" onclick="smoothScrollTo ('contact', event)">Contact</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="mainSection" id="home">
+        <div class="animation">
+          <h4>Hello, <span class="blueText">I'm</span></h4>
+          <h2 class="blueText">Rumesh Siriwardhana</h2>
+          <!-- <div class="small">And</div> -->
+          <div class="wrapper">
+            <div class="static-text">I'm a</div>
+            <ul class="dynamic-text">
+              <li><span>Graphic Designer</span></li>
+              <li><span>UX/UI Designer</span></li>
+              <li><span>Web Developer</span></li>
+              <li><span>Mobile App Developer</span></li>
+            </ul>
+          </div>
+          <p class="whiteText small">
+            Currently, I am pursuing a degree in software engineering. With a
+            passion for creating innovative and user-friendly digital
+            experiences, I strive to blend my technical skills and design
+            expertise to deliver impactful solutions.
+          </p>
+
+          <div
+            class="btn contactMe"
+            onclick="smoothScrollTo ('contact', event)"
+          >
+            Contact Me
+          </div>
+
+          <div class="socials">
+            <a
+              href="https://web.facebook.com/rumesh.siriwardhana.10"
+              target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rumesh-siriwardhana-38100b18b/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="https://github.com/IT21388934" target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a
+              href="https://www.flickr.com/photos/191976934@N02/"
+              target="_blank"
+              ><i class="fa-brands fa-flickr"></i
+            ></a>
+          </div>
+        </div>
+        <div class="mainImg">
+          <img src="./assert/img/mainImg.png" />
+        </div>
+      </div>
+      <section id="about">
+        <div class="container">
+          <h2><span class="blueText">About Me</span></h2>
+          <div class="about-content">
+            <div class="profile-image">
+              <img src="./assert/img/profileImg.jpeg" alt="Profile Image" />
+            </div>
+            <div class="description">
+              <p>
+                Hello! I'm Ruemesh Siriwardhana, a web developer, graphic
+                designer, UI/UX designer, and mobile app developer. Currently, I
+                am pursuing a degree in software engineering. With a passion for
+                creating innovative and user-friendly digital experiences, I
+                strive to blend my technical skills and design expertise to
+                deliver impactful solutions.
+              </p>
+              <p>
+                When I'm not coding or designing, you can find me exploring new
+                technologies, reading books, or honing my skills through
+                personal projects. I value collaboration, creativity, and
+                attention to detail, and I'm always excited to take on new
+                challenges and work on exciting projects.
+              </p>
+              <p>
+                Throughout my journey, I have gained valuable experience in web
+                development, creating visually appealing designs, and developing
+                intuitive user interfaces. I enjoy bringing ideas to life and
+                solving complex problems using modern technologies and industry
+                best practices.
+              </p>
+              <p>
+                As a lifelong learner, I am constantly expanding my knowledge
+                and staying up-to-date with the latest trends and advancements
+                in the field. I believe in continuous improvement and strive to
+                deliver high-quality results that exceed client expectations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <h4>Programming Technologies</h4>
+          <div class="skills-list">
+            <div class="skill">
+              <div class="skill-info">
+                <h3>HTML</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="100%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>CSS</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>JS</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>PHP</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>sql</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>ResctJs</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>NodeJs</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>Java</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>Python</h3>
+                <span>Beginner</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="50%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>C/ C++</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>Kotlin</h3>
+                <span>Beginner</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="60%"></div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <br />
+          <h4>Graphic design and other Skills</h4>
+          <div class="skills-list">
+            <div class="skill">
+              <div class="skill-info">
+                <h3>Photoshop</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>Illustrator</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>figma</h3>
+                <span>Intermediate</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="70%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-info">
+                <h3>Microsoft Office</h3>
+                <span>Expert</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-progress="90%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <!-- <div class="container"> -->
+        <h2>Contact</h2>
+        <div class="subContainer">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>637, Galagawahenawaththa, Kudagammana , Giriulla, Srilanka</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>+94703961965</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>Siriwardhanarumesh@gmail.com</p>
+            </div>
+          </div>
+          <div class="map" id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1399.0623219615782!2d80.1621254813782!3d7.337552847411714!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1689075394573!5m2!1sen!2slk"
+              width="100%"
+              height="550"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy 2023/07/06</p>
+    </footer>
+    <script>
+      const progressBars = document.querySelectorAll(".progress");
+
+      progressBars.forEach((progressBar) => {
+        const progress = progressBar.dataset.progress;
+        progressBar.style.width = progress;
+      });
+
+      // Get the necessary elements
+      const navigations = document.querySelector(".navigations");
+      const dropdown = document.querySelector(".dropdown");
+
+      // Function to toggle the "active" class
+      function toggleMenu() {
+        dropdown.classList.toggle("active");
+      }
+
+      // Add a click event listener to the navigations element
+      navigations.addEventListener("click", toggleMenu);
+    </script>
+
+    <script src="./myscripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+  </body>
+</html>
